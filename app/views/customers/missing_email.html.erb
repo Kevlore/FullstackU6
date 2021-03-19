@@ -1,0 +1,16 @@
+<h1 class="title is-1">Missing Email Customers</h1>
+
+<div class="is-flex is-flex-wrap-wrap">
+  <%= render partial: 'customers/customer',
+            collection: @customers,
+            locals: { show_link: true }
+  %>
+</div>
+
+<div>
+  <%= link_to "Customers", "/"%>
+</div>
+
+<div>
+  <%= link_to "Alphabetized", "/customers/alphabetized" %>
+</div>
